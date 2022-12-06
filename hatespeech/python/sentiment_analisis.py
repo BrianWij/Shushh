@@ -19,9 +19,9 @@ load_Tfidf = pickle.load(open("python/Tfidf.pkl","rb"))
 
 stop_words = set(stopwords.words("english"))
 
-query = "donald trump lang:en" #search
+query = "donald trump lang:en" #kata kunci pencarian dengan filter language english
 tweets = []
-limit = 10
+limit = 10 #menentukan limit tweet yang ingin di scrap. angka dapat di tambah atau di kurang.
 
 for tweet in sntwitter.TwitterSearchScraper(query).get_items():
     
