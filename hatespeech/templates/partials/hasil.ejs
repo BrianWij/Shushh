@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+    <article class="container">
+        <h4>Masukkan text yang ingin diperiksa tingkat hate speech-nya.</h4>
+
+        <label for="textinput">Input Text:</label>
+        <input type="text" id="textinput" name="user_text" placeholder="Enter your text here" maxlength="3000">
+
+        <input type="button" id="btn1" value="Scan">
+
+        <p class="output" id="output1"></p>
+
+        <p class="text"><strong>Your Text:</strong> {{kalimat}}</p>
+        <h4> Detection:</h4>
+           <p class="text_result">{{hasil}}</p>
+
+    </article>
+
+    <script>
+        const text1 = document.getElementById('textinput');
+        const btn1 = document.getElementById('btn1');
+        const out1 = document.getElementById('output1');
+
+        function fun1() {
+            out1.innerHTML = text1.value;
+        }
+
+        btn1.addEventListener('click',fun1);
+
+    </script>
+
+</body>
+</html>
+

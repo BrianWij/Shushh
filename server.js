@@ -25,7 +25,7 @@ app.set("src", "path/to/views");
 //Anasayfa
 app.get("/", (req, res, err) => {
 res.render(__dirname + "/src/pages/index.ejs");
-console.log("Sayfaya giriş yapıldı");
+console.log("Redirecting to the page");
 });
 //Hakkımızda sayfası
 app.get("/hakkimizda", (req, res, err) => {

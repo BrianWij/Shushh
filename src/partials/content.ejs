@@ -1,16 +1,22 @@
 <html>
+
+<head>
+
 </head>
 <body>
 
-    <article class="regular">
+    <article class="container">
         <h4>Masukkan text yang ingin diperiksa tingkat hate speech-nya.</h4>
 
         <label for="textinput">Input Text:</label>
-        <input type="text" id="textinput" placeholder="Enter your text here" maxlength="3000">
+        <input type="text" size="100px" id="textinput" placeholder="Enter your text here" maxlength="3000">
 
         <input type="button" id="btn1" value="Scan">
 
-        <p class="output" id="output1"></p>
+        <p class="output" id="output1"></p> 
+
+        <h4> Detection:</h4>
+        <p class="text_result">{{model_result}}</p>
 
     </article>
 
